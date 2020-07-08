@@ -10,7 +10,7 @@ stages:
         displayName: 'Build the web application'
         variables:     
           wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-          dotnetSdkVersion: '2.171.3'
+          dotnetSdkVersion: '3.1.300'
         jobs:
           - job: 'build' 
             displayName: 'Job Build web App'
