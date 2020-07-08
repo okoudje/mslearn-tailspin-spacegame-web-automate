@@ -90,7 +90,7 @@ stages:
                  echo 'key = "dev.terraform.tfstate"' | tee -a backend.tfvars
 
                  # terraform init
-                   terraform init -input=false -backend="backend.tfvars"
+                   terraform init -input=false -backend-config="backend.tfvars"
                 
                  # terraform apply with auto approve
                    terraform apply -input=false -auto-approve
