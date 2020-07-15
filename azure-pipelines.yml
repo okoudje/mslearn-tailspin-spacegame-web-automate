@@ -134,7 +134,7 @@ stages:
           steps: 
           - task: AzureKeyVault@1
             inputs:
-              azureSubscription: 'Resource Manager - Tailspin - Space Game'
+              azureSubscription: 'ARM-tailspin-connection-service'
               keyVaultName: '$(keyVaultName)'
               secretsFilter: '*'
           - download: current
